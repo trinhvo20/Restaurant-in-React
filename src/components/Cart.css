@@ -4,19 +4,18 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.3);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    display: inline-block;
 }
 
 .inner-cart {
-    margin: 140px 0px 20px;
+    margin: 20px 0px;
     position: relative;
     padding: 10px;
     width: fit-content;
+    margin: 10px auto;
     max-height: fit-content;
     max-width: 650px;
     background-color: white;
