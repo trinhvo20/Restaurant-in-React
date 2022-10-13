@@ -91,14 +91,13 @@
     padding: 5px;
     padding-left: 10px;
     color: white;
-    cursor: pointer;
 }
-.cart-icon:hover {
+/* .cart-icon:hover {
     top: 3px;
     text-shadow: 2px 2px 5px red;
     transition: all 300ms linear 0ms;
     transform: scale(1.2);
-}
+} */
 
 .badge {
     position: relative;

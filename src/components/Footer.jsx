@@ -24,7 +24,7 @@ const Footer = () => {
                         </p>
                         <p>
                             <span class="underline">PHONE</span> <br />
-                            +1 (999) 123-4567
+                            <i class="ri-phone-line"></i> +1 (999) 123-4567
                         </p>
                     </div>
                     <div>
@@ -35,7 +35,7 @@ const Footer = () => {
                         </p>
                         <p>
                             <span class="underline">MEDIA</span> <br />
-                            facebook.com/viet_taste
+                            <i class="ri-facebook-fill"></i> facebook.com/viet_taste
                         </p>
                     </div>
                 </div>

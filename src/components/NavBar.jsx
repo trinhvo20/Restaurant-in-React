@@ -16,7 +16,7 @@ const NavBar = (props) => {
           </Link>
         </li>
         <li class="three">
-          <a onClick={() => props.setButtonPopup(true)}>
+          <a onClick={() => { props.setButtonPopup(true); props.setSucceed(false) }}>
             <span class="icon">Order</span>
           </a>
         </li>
@@ -30,7 +30,7 @@ const NavBar = (props) => {
       <div>
         <span class="cart-icon">
           <i class="ri-shopping-cart-2-line"></i>
-          <span className="badge">0</span>
+          <span className="badge">{props.cartItems.length}</span>
         </span>
       </div>
     </div>

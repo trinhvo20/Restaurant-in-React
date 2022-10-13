@@ -17,6 +17,8 @@ const Cart = (props) => {
                 <div className="cart-items">
                     <h2 className="cart-items-header">My Cart</h2>
 
+                    {props.succeed && (<div className='succeed'>Order Placed! <br /><i class="ri-check-line"></i></div>)}
+
                     {cartItems.length === 0 && (<div className='cart-items-empty'>Your Cart is empty.</div>)}
 
                     <div>
@@ -47,13 +49,14 @@ const Cart = (props) => {
                         <span className="cart-items-total-price">${totalPrice}</span>
                     </div>
 
-                    <div className='buttons-groups'>
-                        <div className="clear-cart">
-                            {cartItems.length >= 1 && (
+
+                    <div className="clear-cart">
+                        {cartItems.length >= 1 && (
+                            <div className='buttons-groups'>
                                 <button className='clear-cart-btn' onClick={props.handleClearCart}>Empty Cart</button>
-                            )
-                            }
-                        </div>
+                                <button className='checkout-btn' onClick={props.handleCheckout}> Proceed to Checkout</button>
+                            </div>)}
+
                     </div>
                 </div>
             </div>

@@ -8,6 +8,7 @@ import Cart from "./Cart";
 
 const Main = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [succeed, setSucceed] = useState(false);
   const [cartItems, setCartItems] = useState([]);
 
   const handleAddToCart = (product) => {
@@ -36,6 +37,11 @@ const Main = () => {
     setCartItems([]);
   }
 
+  const handleCheckout = () => {
+    setCartItems([]);
+    setSucceed(true)
+  }
+
   return (
     <div>
       <div class="main">
@@ -45,12 +51,17 @@ const Main = () => {
         <Cart
           trigger={buttonPopup}
           setTrigger={setButtonPopup}
+          succeed={succeed}
           cartItems={cartItems}
           handleAddToCart={handleAddToCart}
           handleRemoveFromCart={handleRemoveFromCart}
-          handleClearCart={handleClearCart} />
+          handleClearCart={handleClearCart}
+          handleCheckout={handleCheckout} />
       </div>
-      <NavBar setButtonPopup={setButtonPopup} />
+      <NavBar
+        cartItems={cartItems}
+        setButtonPopup={setButtonPopup}
+        setSucceed={setSucceed} />
     </div>
   );
 }
