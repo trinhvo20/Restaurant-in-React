@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.head_container {
+    padding: 0 70px;
+    color: darkred;
+}
+
+.head {
+    display: flex;
+}
+
+.head h1 {
+    text-transform: uppercase;
+    font-size: 250%;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.cuisine {
+    font-size: 0.5em;
+    margin-left: 10px;
+}
+
+.img_container {
+    position: relative;
+    text-align: center;
+}
+
+.sologan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+}
+
+.img_container h1 {
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 70px;
+}
+
+.img_container h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-top: -5%;
+}
+
+.pho_img {
+    width: 80%;
+    height: 450px;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.intro {
+    font-size: 1.5rem;
+    color: darkred;
+    text-align: center;
+    margin: 30px 100px;
+    font-family:'Dancing Script', cursive;
+}
+
+/*=========================NAME=============================*/
+.name {
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*========================SCREEN==============================*/
+
+@media only screen and (max-width: 1100px) {
+    .head_container {
+        padding: 0 60px;
+    }
+    .head {
+        font-size: 80%;
+    }
+    
+    .head h1 {
+        font-size: 250%;
+    }
+    
+    .cuisine {
+        font-size: 0.5em;
+        margin-left: 10px;
+    }
+    
+    .head_list {
+        margin: 30px 90px 0px 0px;
+        font-size: 120%;
+    }
+    
+    .head_list li {
+        padding: 5px;
+    }
+
+    .img_container h1 {
+        font-size: 55px;
+    }
+    
+    .img_container h2 {
+        font-size: 40px;
+        margin-top: -5%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .head_container {
+        padding: 0 60px;
+    }
+    .head {
+        font-size: 70%;
+    }
+    
+    .head h1 {
+        font-size: 250%;
+    }
+    
+    .cuisine {
+        font-size: 0.5em;
+        margin-left: 10px;
+    }
+    
+    .head_list {
+        margin: 26px 90px 0px 0px;
+        font-size: 120%;
+    }
+    
+    .head_list li {
+        padding: 4px;
+    }
+
+    .img_container h1 {
+        font-size: 40px;
+    }
+    
+    .img_container h2 {
+        font-size: 25px;
+        margin-top: -5%;
+    }
+
+    .intro {
+        font-size: 0.8em;
+    }
+
+    .title {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .head_container {
+        padding: 0 40px;
+    }
+    .head {
+        font-size: 60%;
+    }
+    
+    .head h1 {
+        font-size: 250%;
+    }
+    
+    .cuisine {
+        font-size: 0.5em;
+        margin-left: 10px;
+    }
+    
+    .head_list {
+        margin: 22px 70px 0px 0px;
+        font-size: 120%;
+    }
+    
+    .head_list li {
+        padding: 4px;
+    }
+}
