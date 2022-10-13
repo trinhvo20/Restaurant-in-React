@@ -5,6 +5,8 @@ const Cart = (props) => {
     const trigger = props.trigger;
     const cartItems = props.cartItems;
 
+    const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0);
+
     return (trigger) ? (
         <div className='cart'>
             <div className="inner-cart">
@@ -13,7 +15,7 @@ const Cart = (props) => {
                 </span>
 
                 <div className="cart-items">
-                    <div className="cart-item-header">My Cart</div>
+                    <h2 className="cart-items-header">My Cart</h2>
 
                     {cartItems.length === 0 && (<div className='cart-items-empty'>Your Cart is empty.</div>)}
 
@@ -21,17 +23,37 @@ const Cart = (props) => {
                         {cartItems.map(item => (
                             <div key={item.id} className="cart-items-list">
                                 <img className='cart-items-img' src={item.imgUrl} alt={item.title} />
-                                <div className='cart-items-name'>{item.title}</div>
-                                <div className="cart-item-function">
-                                    <span className="cart-items-add" onClick={() => props.handleAddToCart(item)}>
-                                        <i class="ri-add-line"></i>
-                                    </span>
-                                    <span className="cart-items-remove" onClick={() => props.handleRemoveFromCart(item)}>
-                                        <i class="ri-subtract-line"></i>
-                                    </span>
+                                <div className="cart-items-info">
+                                    <div className='cart-items-name'>{item.title}</div>
+
+                                    <div className="cart-items-price">${item.price}</div>
+
+                                    <div className="cart-item-function">
+                                        <span className="cart-items-remove" onClick={() => props.handleRemoveFromCart(item)}>
+                                            <i class="ri-subtract-line"></i>
+                                        </span>
+                                        <span className='cart-items-quantity'>{item.quantity}</span>
+                                        <span className="cart-items-add" onClick={() => props.handleAddToCart(item)}>
+                                            <i class="ri-add-line"></i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         ))}
+                    </div>
+
+                    <div className="cart-items-total-price-title">
+                        Total Price:
+                        <span className="cart-items-total-price">${totalPrice}</span>
+                    </div>
+
+                    <div className='buttons-groups'>
+                        <div className="clear-cart">
+                            {cartItems.length >= 1 && (
+                                <button className='clear-cart-btn' onClick={props.handleClearCart}>Empty Cart</button>
+                            )
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

@@ -32,6 +32,10 @@ const Main = () => {
     }
   }
 
+  const handleClearCart = () => {
+    setCartItems([]);
+  }
+
   return (
     <div>
       <div class="main">
@@ -43,7 +47,8 @@ const Main = () => {
           setTrigger={setButtonPopup}
           cartItems={cartItems}
           handleAddToCart={handleAddToCart}
-          handleRemoveFromCart={handleRemoveFromCart} />
+          handleRemoveFromCart={handleRemoveFromCart}
+          handleClearCart={handleClearCart} />
       </div>
       <NavBar setButtonPopup={setButtonPopup} />
     </div>
