@@ -4,7 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import { Appetizers, MainDishes, Drinks } from '../assets/foods'
 import SingleProduct from "./SingleProduct";
 
-const Menu = () => {
+const Menu = (props) => {
   const [filter, setFilter] = useState('APPERTIZERS')
   const [products, setProducts] = useState(Appetizers)
 
@@ -34,7 +34,7 @@ const Menu = () => {
             {
               products.map(item => (
                 <Col lg="3" key={item.id} className="mb-3">
-                  <SingleProduct item={item} />
+                  <SingleProduct item={item} handleAddToCart={props.handleAddToCart} />
                 </Col>
               ))
             }

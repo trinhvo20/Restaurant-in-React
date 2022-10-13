@@ -29,3 +29,9 @@
 .inner-cart .close-btn:hover {
     cursor: pointer;
 }
+
+/* ===================================================== */
+.cart-items-img {
+ width: 100px;
+ height: 100px;
+}

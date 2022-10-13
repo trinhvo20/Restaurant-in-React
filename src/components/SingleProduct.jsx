@@ -14,7 +14,11 @@ const SingleProduct = (props) => {
                 <h6>{title}</h6>
                 <div className="d-flex align-items-center justify-content-between">
                     <span className="price d-flex align-items-center">Price: $<span>{price}</span></span>
-                    <span className='shopping-icon'><i class="ri-shopping-cart-2-line"></i></span>
+                    <span
+                        className='shopping-icon'
+                        onClick={() => props.handleAddToCart(props.item)}>
+                        <i class="ri-shopping-cart-2-line"></i>
+                    </span>
                 </div>
                 <p className='info'>{info}</p>
             </div>

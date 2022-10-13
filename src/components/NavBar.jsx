@@ -1,6 +1,5 @@
 import "./NavBar.css";
 import { Link } from 'react-scroll';
-import Cart from "./Cart";
 
 const NavBar = (props) => {
   return (
