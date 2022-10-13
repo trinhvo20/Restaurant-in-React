@@ -2,7 +2,7 @@ import "./NavBar.css";
 import { Link } from 'react-scroll';
 import Cart from "./Cart";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div>
       <ul class="navbar">
@@ -17,7 +17,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li class="three">
-          <a href="#">
+          <a onClick={() => props.setButtonPopup(true)}>
             <span class="icon">Order</span>
           </a>
         </li>

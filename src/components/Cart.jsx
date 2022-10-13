@@ -5,7 +5,7 @@ const Cart = (props) => {
     return (props.trigger) ? (
         <div className='cart'>
             <div className="inner-cart">
-                <span className="close-btn">
+                <span className="close-btn" onClick={() => props.setTrigger(false)}>
                     <i class="ri-close-line"></i>
                 </span>
                 {props.children}
