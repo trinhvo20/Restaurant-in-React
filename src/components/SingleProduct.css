@@ -40,6 +40,13 @@
     cursor: pointer;
 }
 
+.shopping-icon:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -5px darkred;
+    transition: all 100ms linear 0ms;
+    transform: scale(1.1);
+}
+
 .d-flex {
     display: flex;
 }

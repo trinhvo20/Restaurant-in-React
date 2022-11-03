@@ -9,7 +9,21 @@ const Footer = () => {
                 <h2>HISTORY</h2>
                 <p>Viet’s Taste's history goes back to California since the 1980’s.
                     <br />Today, from generation to generation, the legacy of Viet's Taste continues.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit autem possimus sunt fugiat maiores ipsum quia impedit praesentium, blanditiis nam delectus, magni nisi vitae natus, deserunt ab magnam asperiores nemo numquam omnis. Recusandae iure corrupti consectetur ea fuga explicabo accusamus! Nam nisi rerum pariatur magni laboriosam iure officia, inventore voluptas laborum quam cumque sit. Possimus, dolore officiis non iste ipsam minima officia pariatur, saepe sequi accusamus blanditiis nobis magnam voluptas doloribus fugiat odit veniam sed omnis, modi deserunt. Est consectetur suscipit iste nam, voluptas quisquam esse maiores animi labore ratione, molestias velit! Voluptatem ex ipsa velit quam molestiae repudiandae perferendis labore consequuntur dolores commodi. Qui, veritatis doloribus! Expedita autem sint quam error nisi, suscipit ipsa voluptates eaque inventore officiis dolorum aperiam, neque tempore magni impedit. Tenetur, iusto ab provident repellat nesciunt explicabo nam aliquam deleniti. Quibusdam aliquam culpa perspiciatis ut sapiente nulla! Eaque dolor beatae ullam distinctio earum eum libero cupiditate ratione quidem voluptatum amet excepturi ipsum, aperiam unde rem ab nulla facere repudiandae laborum molestiae rerum? Nam nulla provident sunt totam adipisci quibusdam, natus voluptates commodi explicabo labore assumenda tempore facilis. Consequuntur et illo voluptas earum ipsum eos, delectus accusamus quam saepe dolor reiciendis obcaecati aliquid doloribus reprehenderit at.</p>
+
+                <p>Viet’s Taste is built on a foundation of love, family, food, and a passion for hospitality.
+                    It all started from a humble dream of two young restaurant servers, Thanh and Oanh (One).
+                    Arriving to the U.S. by boat in the early 1980s, they met each other in 1986 while working in a Vietnamese restaurant.
+                    They married soon after, with their love, passion, and aspirations to open up their own restaurant only growing stronger.</p>
+
+                <p>They eventually realized their dreams, opening the doors to Viet’s Taste.
+                    In their early years of running their own restaurant, Thanh and Oanh (One) were focused on developing the best recipes, doing careful research to make sure every dish offered the most authentic Vietnamese experience outside of Vietnam.
+                    At the same time, they were also focused on putting together the right team to provide the best service and experience for their guests.</p>
+
+                <p>A tireless dedication to these dreams and an unwavering drive to share their love through their cuisine has made Viet’s Taste the extraordinary establishment that it is today.
+                    Now, with three decades of restaurant experience under their belts, Thanh and Oanh (One) are honored to provide guests with highly appetizing dishes, excellent service, and an overall delightful experience.</p>
+
+                <p>Today, Viet’s Taste is proud to celebrate, honor, and carry on the dream that inspired its humble beginnings.
+                    <br />We invite you to be part of our dream and experience our passion through our unique, delicious, amazing cuisine!</p>
             </div>
             <footer>
                 <h2>CONTACT US</h2>
@@ -34,13 +48,13 @@ const Footer = () => {
                             Sunday: 12AM - 9PM
                         </p>
                         <p>
-                            <span class="underline">MEDIA</span> <br />
+                            <span class="underline">SOCIAL MEDIA</span> <br />
                             <i class="ri-facebook-fill"></i> facebook.com/viet_taste
                         </p>
                     </div>
                 </div>
             </footer>
-        </div>
+        </div >
     )
 }
 

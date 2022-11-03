@@ -28,10 +28,12 @@ const NavBar = (props) => {
       </ul>
 
       <div>
-        <span class="cart-icon">
-          <i class="ri-shopping-cart-2-line"></i>
-          <span className="badge">{props.cartItems.length}</span>
-        </span>
+        <a onClick={() => { props.setButtonPopup(true); props.setSucceed(false) }}>
+          <span class="cart-icon">
+            <i class="ri-shopping-cart-2-line"></i>
+            <span className="badge">{props.cartItems.length}</span>
+          </span>
+        </a>
       </div>
     </div>
   );
