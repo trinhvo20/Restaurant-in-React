@@ -4,3 +4,19 @@
     padding: 10px;
     border: 15px solid darkred;
 }
+
+.alert-container {
+    color: white;
+    position: fixed;
+    top: 4rem;
+    left: 48%;
+    padding: 8px 16px;
+    background-color: darkred;
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 5px 5px 5px 0 rgb(190, 96, 96);
+}
+  
+/* .alert-inner {
+    display: inline-block;
+} */

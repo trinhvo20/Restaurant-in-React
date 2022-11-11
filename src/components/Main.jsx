@@ -10,6 +10,7 @@ const Main = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
   const [succeed, setSucceed] = useState(false);
   const [cartItems, setCartItems] = useState([]);
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
 
   const handleAddToCart = (product) => {
     const productExists = cartItems.find((item) => item.id === product.id);
@@ -20,6 +21,11 @@ const Main = () => {
     } else {
       setCartItems([...cartItems, { ...product, quantity: 1 }])
     }
+    // show notification "Added to cart"
+    setIsAlertVisible(true);
+    setTimeout(() => {
+      setIsAlertVisible(false);
+    }, 1000);
   }
 
   const handleRemoveFromCart = (product) => {
@@ -45,6 +51,10 @@ const Main = () => {
   return (
     <div>
       <div class="main">
+
+        {/* Show notification "Added to cart" when add item to cart */}
+        {isAlertVisible && <div className='alert-container'>Item Added!</div>}
+
         <Header />
         <Menu handleAddToCart={handleAddToCart} />
         <Footer />
@@ -58,6 +68,7 @@ const Main = () => {
           handleClearCart={handleClearCart}
           handleCheckout={handleCheckout} />
       </div>
+
       <NavBar
         cartItems={cartItems}
         setButtonPopup={setButtonPopup}

@@ -17,8 +17,10 @@ const Cart = (props) => {
                 <div className="cart-items">
                     <h2 className="cart-items-header">My Cart</h2>
 
+                    {/* Show "Order Placed" when successfully check out */}
                     {props.succeed && (<div className='succeed'>Order Placed! <br /><i class="ri-check-line"></i></div>)}
 
+                    {/* Show "Cart is empty" after cleared cart or checked out */}
                     {cartItems.length === 0 && (<div className='cart-items-empty'>Your Cart is empty.</div>)}
 
                     <div>
